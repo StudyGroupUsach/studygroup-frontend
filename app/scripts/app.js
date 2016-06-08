@@ -1,6 +1,6 @@
 (function(){
 
-    angular.module('angularSpa', [
+    angular.module('StudyGroup', [
     'ngRoute'
     ])
     .config(function($routeProvider){

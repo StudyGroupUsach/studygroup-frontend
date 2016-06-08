@@ -1,10 +1,6 @@
 (function(){
-    angular.module('angularSpa')
+    angular.module('StudyGroup')
     .controller('AboutCtrl', function($scope){
-        $scope.items = [
-          'Bower',
-          'Sass',
-          'Gulp'
-        ];
+      $scope.authors = ['Jonás Varas Fuentes', 'Dany Rubiano', 'Francisco Muñoz'];
     });
 })();

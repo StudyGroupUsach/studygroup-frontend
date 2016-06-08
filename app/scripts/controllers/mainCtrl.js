@@ -1,5 +1,5 @@
 (function(){
-    angular.module('angularSpa')
+    angular.module('StudyGroup')
 .controller('MainCtrl', function($scope){
 	$scope.items = [
       'Bower',
