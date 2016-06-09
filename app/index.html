@@ -19,9 +19,12 @@
 </head>
 <body ng-app="StudyGroup">
 <nav class="navbar navbar-default">
-  <ul class="nav navbar-nav navbar-right">
+  <ul class="nav navbar-nav">
     <li><a href="#/home">Inicio</a></li>
     <li><a href="#/about">Acerca de</a></li>
+    <li><a href="#/login">Login</a></li>
+    <li><a href="#/register">Registrate</a><li>
+    <li><a href="#/edit_user">EditarContraseña</a></li>  
   </ul>
 </nav>
 <img class="logo" src="images/angular.png" alt="logo">
@@ -44,7 +47,12 @@
   <!-- inject:js -->
   <script src="scripts/app.js"></script>
   <script src="scripts/controllers/aboutCtrl.js"></script>
+  <script src="scripts/controllers/dashboardCtrl.js"></script>
+  <script src="scripts/controllers/homeCtrl.js"></script>
+  <script src="scripts/controllers/loginCtrl.js"></script>
   <script src="scripts/controllers/mainCtrl.js"></script>
+  <script src="scripts/controllers/registerCtrl.js"></script>
+  <script src="scripts/controllers/components/modificarContrasenaUsuarioCtrl.js"></script>
   <!-- endinject -->
   <!-- endbuild -->
 </body>

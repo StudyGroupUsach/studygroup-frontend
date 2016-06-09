@@ -1,0 +1,43 @@
+<form>
+  <div class="form-group">
+    <label for="Username">Nombre</label>
+    <input type="text" class="form-control" id="username" placeholder="Nombre" ng-model="userName">
+  </div>
+
+  <div class="form-group">
+    <label for"Usersurname">Apellidos</label>
+    <input type="text" class="form-control" id="usersurname" placeholder="Apellidos" ng-model="userSurname">
+  </div>
+
+  <div class="form-group">
+    <label for="Usermail">Email</label>
+    <input type="email" class="form-control" id="usermail" placeholder="nombre.apellido@usach.cl" ng-model="userEmail">
+  </div>
+
+  <div class="form-group">
+    <label for="Usermail2">confirme Email</label>
+    <input type="email" class="form-control" id="usermail2" placeholder="nombre.apellido@usach.cl" ng-model="userEmail2">
+  </div>
+
+  <div class="form-group">
+    <label for="Userphone">Celular</label>
+    <input type="number" class="form-control" id="userphone" placeholder="123456789" ng-model="userPhone">
+  </div>
+
+  <div class="form-group">
+    <label for="Userpass">Contraseña</label>
+    <input type="password" class="form-control" id="userpass" placeholder="Contraseña" ng-model="userPassword">
+  </div>
+
+  <div class="form-group">
+    <label for="Userpass2">Reingrese la contraseña </label>
+    <input type="password" class="form-control" id="userpass2" placeholder="Contraseña" ng-model="userPassword2">
+  </div>
+
+  <div class="form-group">
+    <label for="Userarrera">Carrera</label>
+    <select class="form-control" ng-model="userCarrera" ng-options="car.nombreCarrera for car in carreras"></select>
+  </div>
+  <button ng-click="registrar()" type="submit" class="btn btn-default">Registrar</button>
+
+</form>
