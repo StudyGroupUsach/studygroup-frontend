@@ -3,8 +3,6 @@
 
     $scope.login = function(){
 
-      //var user = {}
-
       var args = {
         method: 'POST',
         url: 'http://mongostudygroup-app4tbd.rhcloud.com/service/login',

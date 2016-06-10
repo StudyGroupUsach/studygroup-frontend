@@ -18,18 +18,41 @@
   <!-- endbuild -->
 </head>
 <body ng-app="StudyGroup">
-<nav class="navbar navbar-default">
-  <ul class="nav navbar-nav">
-    <li><a href="#/home">Inicio</a></li>
-    <li><a href="#/about">Acerca de</a></li>
-    <li><a href="#/login">Login</a></li>
-    <li><a href="#/register">Registrate</a><li>
-    <li><a href="#/edit_user">EditarContraseña</a></li>  
-  </ul>
-</nav>
-<img class="logo" src="images/angular.png" alt="logo">
+  <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-xs-right">
+            <li class="nav-item active">
+              <a class="nav-link" href="#/home">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#/about">Acerca</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#/register">Regístrate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#/edit_user">DEBUG:EditarPass</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#/user_profile">DEBUG:Perfil</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted" value="color: #000000" >StudyGroup</h3>
+      </div>
+
+
+
+    </div> <!-- /container -->
+
+
+
 <div class="container">
-    <h1>StudyGroup</h1>
+    <h1></h1>
     <div ng-view=""></div>
 </div>
   <!-- Recursos de bower-->
@@ -52,8 +75,14 @@
   <script src="scripts/controllers/loginCtrl.js"></script>
   <script src="scripts/controllers/mainCtrl.js"></script>
   <script src="scripts/controllers/registerCtrl.js"></script>
+  <script src="scripts/controllers/components/mapaUsuariosCtrls.js"></script>
   <script src="scripts/controllers/components/modificarContrasenaUsuarioCtrl.js"></script>
+  <script src="scripts/controllers/components/usuarioPerfilCtrl.js"></script>
   <!-- endinject -->
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsNe1s_Sw9AU1cCDT-_5R3YSwju3Hkc1A&callback=initMap">
+  </script>
+
   <!-- endbuild -->
 </body>
 </html>

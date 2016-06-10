@@ -25,6 +25,10 @@
             templateUrl: 'views/components/modificarContrasenaUsuario.html',
             controller: 'ModificarContrasenaUsuarioCtrl'
           })
+        .when('/user_profile', {
+            templateUrl: 'views/components/usuarioPerfil.html',
+            controller: 'UsuarioPerfilCtrl'
+          })
         .otherwise({
             redirectTo: '/home'
           });

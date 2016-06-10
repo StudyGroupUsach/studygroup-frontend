@@ -26,5 +26,8 @@
         "dist/js/bootstrap.js"
       ]
     }
+  },
+  "devDependencies": {
+    "angular-google-maps": "^2.3.3"
   }
 }
