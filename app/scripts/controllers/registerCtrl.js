@@ -1,3 +1,5 @@
+"use strict";
+
 (function(){
     angular.module('StudyGroup')
     .controller('RegisterCtrl', function($scope,$http){

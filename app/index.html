@@ -40,6 +40,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#/user_profile">DEBUG:Perfil</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#/mapTest">DEBUG:MapTest</a>
+            </li>
           </ul>
         </nav>
         <h3 class="text-muted" value="color: #000000" >StudyGroup</h3>
@@ -49,12 +52,11 @@
 
     </div> <!-- /container -->
 
-
-
 <div class="container">
     <h1></h1>
     <div ng-view=""></div>
 </div>
+
   <!-- Recursos de bower-->
   <!-- build:js js/vendor.js -->
   <!-- bower:js -->
@@ -62,6 +64,15 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+  <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
+  <script src="bower_components/markerclustererplus/src/markerclusterer.js"></script>
+  <script src="bower_components/google-maps-utility-library-v3-markerwithlabel/dist/markerwithlabel.js"></script>
+  <script src="bower_components/google-maps-utility-library-v3-infobox/dist/infobox.js"></script>
+  <script src="bower_components/google-maps-utility-library-v3-keydragzoom/dist/keydragzoom.js"></script>
+  <script src="bower_components/js-rich-marker/src/richmarker.js"></script>
+  <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -76,12 +87,11 @@
   <script src="scripts/controllers/mainCtrl.js"></script>
   <script src="scripts/controllers/registerCtrl.js"></script>
   <script src="scripts/controllers/components/mapaUsuariosCtrls.js"></script>
+  <script src="scripts/controllers/components/mapasTestCtrl.js"></script>
   <script src="scripts/controllers/components/modificarContrasenaUsuarioCtrl.js"></script>
   <script src="scripts/controllers/components/usuarioPerfilCtrl.js"></script>
   <!-- endinject -->
-  <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsNe1s_Sw9AU1cCDT-_5R3YSwju3Hkc1A&callback=initMap">
-  </script>
+
 
   <!-- endbuild -->
 </body>
