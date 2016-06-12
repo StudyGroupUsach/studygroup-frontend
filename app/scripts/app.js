@@ -53,6 +53,10 @@
             templateUrl: 'views/components/mapasTest.html',
             controller: 'MapasTestCtrl'
           })
+        .when('/carreras', {
+            templateUrl: 'views/components/carrerasAll.html',
+            controller: 'CarrerasAllCtrl'
+          })
         .otherwise({
             redirectTo: '/home'
           });

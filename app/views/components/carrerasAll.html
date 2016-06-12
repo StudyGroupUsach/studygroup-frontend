@@ -1,0 +1,21 @@
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" ng-repeat="car in carreras">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="car.nombreCarrera">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" data-target="#collapse-{{car.carreraId}}" aria-expanded="false" aria-controls="collapseTwo">
+          {{car.nombreCarrera}}
+        </a>
+      </h4>
+    </div>
+    <div id="collapse-{{car.carreraId}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="car.nombreCarrera">
+      <div class="panel-body">
+        <ul ng-repeat="ram in car.ramo">
+          <li>{{ram.nombreRamo}}
+            <button type="button" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-star" style="color:yellow" aria-hidden="true"></span>
+            </button>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
